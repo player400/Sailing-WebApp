@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+		
+		<title>
+			Żeglarstwo
+		</title>
+		<link rel="icon" href="img/icon.png">
+		
+		<link rel="stylesheet" type="text/css" href="styles/layout.css">
+		<link rel="stylesheet" type="text/css" href="styles/global.css">
+		
+		<script src="scripts/prepare_favourites_page.js"></script>
+		<script src="scripts/add_favourite.js"></script>
+		<script src="scripts/darkmode.js"></script>
+	</head>
+	<body>
+		<nav>
+			<svg id="menu_svg" viewBox="0 0 100 100" onclick="change()">
+				<polygon points="75,98 5,98 15,83 54,83 54,10 57,10 57,83 95,83" style="fill:var(--general_text_color);"/>
+				<polygon points="95,82 62,78 58,10" style="fill:var(--navigation_text_color);"/>
+				<polygon points="53,80 15,75 53,10" style="fill:var(--theme_color);"/>
+			</svg>
+			<ol>
+				<li class="menu_element">
+					<a href="index.html" class="menu_link">
+						STRONA GŁÓWNA
+					</a>
+				</li>
+
+				<li id="dropdown" class="menu_element active">
+					KLASY
+					<ul id="dropdown_body">
+									
+					</ul>
+				</li>
+
+				<li class="menu_element" id="bottom_menu_element">
+					<a href="contact.html" class="menu_link">
+						KONTAKT
+					</a>
+				</li>
+			</ol>
+			
+		</nav>
+		
+		<main>
+
+
+		</main>
+		
+		<footer>
+			Copyright ©  Mateusz Nurczyński 2022 
+		</footer>
+
+	</body>
+</html>

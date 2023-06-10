@@ -1,0 +1,79 @@
+:root
+{
+	--form_input_padding: 3px;
+	--form_table_height: 20px;
+}
+
+input[type=text], input[type=date], select
+{
+	width: 100%;
+	padding: var(--form_input_padding);
+	border: 0;
+	border-bottom: 1px solid var(--navigation_text_color);
+}
+
+textarea
+{
+	border: 1px solid var(--navigation_text_color);
+	resize: none;
+	width: 99%;
+}
+
+th, td
+{
+	width: 50%;
+	height: var(--form_table_height);
+}
+
+table
+{
+	width: 100%;
+}
+
+th
+{
+	padding: 0px;
+	height: 30px;
+}
+
+input[type=submit], input[type=reset] 
+{
+ 	background-color: var(--theme_color);
+  	border: none;
+  	color: var(--main_element_color);
+  	text-decoration: none;
+  	cursor: pointer;
+	width: 100%;
+	padding: 0;
+	height: 100%;
+	box-shadow: var(--shadow);
+}
+
+input[type=submit]:hover, input[type=reset]:hover 
+{
+ 	background-color: var(--main_element_color);
+  	border: none;
+  	color: var(--navigation_text_color);
+  	text-decoration: none;
+  	cursor: pointer;
+}
+
+.ui-dialog-title
+{
+	color: var(--navigation_text_color);
+}
+
+.ui-dialog-titlebar.ui-corner-all
+{
+    background: var(--main_element_color);
+	border: 0;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+#validation_dialog
+{
+	display: none;
+}

@@ -1,0 +1,26 @@
+<?php
+$routing = [
+	'/' => 'index',
+	'/index.php' => 'index',
+	'/contact.php' => 'contact',
+	'/classes.php' => 'classes',
+	'/favourites.php' => 'favourites',
+	'/view_image.php' => 'view_image',
+	'/gallery.php' => 'gallery',
+	'/image_form.php' => 'image_form',
+	'/submit_image.php' => 'submit_image',
+	'/admin.php' => 'admin',
+	'/log_in.php' => 'log_in',
+	'/sign_up.php' => 'sign_up',
+	'/log_in_form.php' => 'log_in_form',
+	'/sign_up_form.php' => 'sign_up_form',
+	'/log_out.php' => 'log_out',
+	'/next_page.php' => 'next_page',
+	'/previous_page.php' => 'previous_page',
+	'/save_chosen.php' => 'save_chosen',
+	'/chosen.php' => 'chosen',
+	'/delete_chosen.php' => 'delete_chosen',
+	'/search_engine.php' => 'search_engine',
+	'/search.php' => 'search',
+];
+?>

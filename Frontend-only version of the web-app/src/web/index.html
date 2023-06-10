@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height initial-scale=1.0">
+		
+		<title>
+			Żeglarstwo
+		</title>
+		
+		<link rel="icon" href="img/icon.png">	
+		<link rel="stylesheet" type="text/css" href="styles/layout.css">
+		<link rel="stylesheet" type="text/css" href="styles/global.css">
+		<link rel="stylesheet" type="text/css" href="styles/tabs.css">
+		
+		<link rel="stylesheet" type="text/css" href="scripts/jquery/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="scripts/jquery/jquery-ui.structure.min.css">
+		<link rel="stylesheet" type="text/css" href="scripts/jquery/jquery-ui.theme.min.css">
+		<script src="scripts/jquery/jquery.js"></script>
+		<script src="scripts/jquery/jquery-ui.min.js"></script>
+		<script>
+			$( function() {
+				$( "#tabs" ).tabs();
+				document.getElementById('tabs_menu').style.display = 'block';
+			} );
+		</script>
+		
+		<script src="scripts/add_favourites_menu.js"></script>
+		<script src="scripts/darkmode.js"></script>
+	</head>
+	<body onclick>
+		<nav>
+			<svg id="menu_svg" viewBox="0 0 100 100" onclick="change()">
+				<polygon points="75,98 5,98 15,83 54,83 54,10 57,10 57,83 95,83" style="fill:var(--general_text_color);"/>
+				<polygon points="95,82 62,78 58,10" style="fill:var(--navigation_text_color);"/>
+				<polygon points="53,80 15,75 53,10" style="fill:var(--theme_color);"/>
+			</svg>
+			<ol>
+				<li class="menu_element active">
+					<a href="index.html" class="menu_link">
+						STRONA GŁÓWNA
+					</a>
+				</li>
+
+				<li id="dropdown" class="menu_element">
+					<a href="#" class="menu_link">KLASY</a>
+					<ul id="dropdown_body">		
+						<li class="menu_element">
+							<a href="classes.html#omega" class="menu_link">
+								OMEGA
+							</a>
+						</li>
+						
+
+						
+						<li class="menu_element">
+							<a href="classes.html#venus" class="menu_link">
+								VENUS
+							</a>
+						</li>
+							
+
+						
+						<li class="menu_element">
+							<a href="classes.html#orion" class="menu_link">
+								ORION
+							</a>
+						</li>
+											
+
+						
+						<li class="menu_element">
+							<a href="classes.html#laser" class="menu_link">
+								LASER
+							</a>
+						</li>
+	
+						<li class="menu_element">
+							<a href="classes.html#optymist" class="menu_link">
+								OPTYMIST
+							</a>
+						</li>			
+					</ul>
+				</li>
+
+				<li class="menu_element" id="bottom_menu_element">
+					<a href="contact.html" class="menu_link">
+						KONTAKT
+					</a>
+				</li>
+			</ol>
+			
+		</nav>
+		
+		<main>
+					
+			<header>
+				Żeglarstwo śródlądowe w Polsce
+			</header>
+
+			<article class="general_content_box">
+				<h2>Wstęp</h2>
+				<div class="sub_container">
+					<h4>
+						Niniejsza strona jest zbiorem informacji na temat żeglarstwa śródlądowego w Polsce, zarówno rekreacyjnego jak i sportowego.<br>
+						Poniżej można znaleźć różnego rodzaju informacje dotyczące tego tematu, natomiast w zakładce KLASY dostępne są dane o kilku najpopularniejszych typach łodzi wykorzystywanych na polskich wodach śródlądowych i morskich wewnętrznych.<br>
+					</h4>
+					<p>
+						Wdg badania Omnibus ok. 70% Polaków miało w ciągu swojego życia mniejszy lub większy kontakt z żeglarstwem, natomist 2% Polaków uczestniczy lub uczestniczyło w zawodach żeglarskich, natomiast aż 5% badanych zadeklarowało, że potrafi samodzielnie sterować jachtem pod żaglami.<br>
+						<br>
+						Głównymi ośrodkami żeglarstwa w Polsce są Mazury, z Giżyckiem, Rynem, Mrągowem, Mikołajkami, Ostródą oraz Pomorze na czele z Zatoką Gdańską.<br>
+						<br>
+						Największą organizacją branżową w kraju jest <a href="https://pya.org.pl/polski-zwiazek-zeglarski" target="new">Polski Związek Żeglarski</a>, podzielony na 38 związków okręgowych i zrzeszający ponad 700 klubów żeglarskich. PZŻ jest jedynym podmiotem wydającym uprawnienia żeglarskie oraz rejestrującym jachty żaglowe.<br>
+						Związek organizuje również zawody sportowe oraz jest odpowiedzialny za dobór Polskiej kadry narodowej.
+						
+					<p>		
+				</div>
+				<figure class="sub_container">
+					<img src="img/zachod_slonca.jpg" alt="Zachód słońca nad jeziorem" title="Piękna sceneria Pojezierza Mazurskiego">
+				</figure>
+				
+			</article>
+			<article class="general_content_box">
+				<h2>Charakterystyka żeglarstwa w Polsce</h2>
+				<div class="sub_container">
+					<img src="img/jezioro.jpg" alt="Zdjęcie jeziora" title="Polskie jezioro">
+				</div>
+				<div class="sub_container" id="tabs">
+					<ul id="tabs_menu">
+						<li>
+							<a href="#tury">Turystyka</a>
+						</li>
+						<li>
+							<a href="#spor">Sport</a>
+						</li>
+						<li>
+							<a href="#praw">Prawo</a>
+						</li>
+					</ul>
+					<div id="tury">
+						<h3>Turystyka</h3>
+						<p>
+							W miejscowościach położonych nad jeziorami i będących dużymi ośrodkami turystycznymi dostępna jest zazwyczaj bogata oferta turystyczna.<br>
+							Możliwy jest min. czarter jachtów - dla wielu osób najbardziej praktyczny sposób na żeglarstwo rekreacyjne.<br>
+							Pośród jachtów czarterowych przeważają zdecydowanie duże jachty kabinowe. Popularną formą wypoczynku na dużych akwenach są właśnie kilkudniowe rejsy wyczarterowanymi jachtami.
+						</p>
+					</div>
+					<div id="spor">
+						<h3>Zawody sportowe (regaty)</h3>
+						<p>
+							Głównym organizatorem regat, zarówno profesjonalnych, jak i amatorskich jest PZŻ.<br>
+							Do największych należą Ogólnopolskie Regaty Żeglarskie, których uczestnicy są wyłaniani w regatach okręgowych.							
+						</p>
+					</div>
+					<div id="praw">
+						<h3>Regulacje prawne dot. żeglarstwa</h3>
+						<p>
+							Obowiązkowa jest rejestracja wszystkich jednostek pływającyh o długości kadłuba min. 7.5 lub o silniku mocy min. 15kW. Zdecydowana większość polskich jachtów żaglowych (poza jachtami pełnomorskimi) nie podlega więc temu obowiązkowi i zarejestrowana nie jest.<br>
+							Istnieją 3 stopnie uprawnień żeglarskich: ŻJ (Żeglarz Jachtowy), JSM (Jachtowy Sternik Morski), KJ (Kapitan jachtowy). Osoby dysponujące uprawnieniami ŻJ i JSM mogą samodzielnie prowadzić jachty żaglowe po wodach śródlądowych oraz po wodach morskich z pewnymi ograniczeniami (dot. długości kadłuba, pogody oraz akwenu).<br>
+							Bez żadnych uprawnień można prowadzić jednostki do 7.5m kadłuba, a więc większość jachtów występujących na polskich wodach śródlądowych i morskich wewnętrznych.
+						</p>
+					</div>
+				</div>
+			</article>
+		</main>
+		<footer>
+			Copyright ©  Mateusz Nurczyński 2022 
+		</footer>
+	</body>
+</html>

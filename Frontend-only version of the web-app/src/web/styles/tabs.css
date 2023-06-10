@@ -1,0 +1,14 @@
+.sub_container.ui-tabs.ui-corner-all
+{
+	padding: 0;
+}
+
+#tabs
+{
+	border: 0;
+}
+
+#tabs_menu
+{
+	display: none;
+}

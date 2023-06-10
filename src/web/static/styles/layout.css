@@ -1,0 +1,244 @@
+
+body
+{
+	margin:0px;
+	color: var(--general_text_color);
+	background-color: var(--theme_color);
+	font-size: var(--general_font_size);
+	width: 100%;
+	float: right;
+}
+
+nav
+{
+	width: var(--pc_layout_nav_width);
+	margin-right: 0px;
+	padding: 0;
+	display: block;
+	position: fixed;
+	height: 100%;
+	background-color: var(--main_element_color);
+	float: left;
+	box-shadow: var(--shadow);
+	font-weight: bold;
+	font-size: var(--navigation_font_size);
+}
+
+nav ol, .menu_element
+{
+	list-style-type: none;
+	width: var(--pc_layout_nav_width);
+	padding: 0;
+	text-align: center;
+	padding-top: var(--menu_element_padding);
+	padding-bottom: var(--menu_element_padding);
+	color: var(--navigation_text_color);
+	margin-top: 0px;
+	background-color: var(--main_element_color);
+}
+
+nav ol
+{
+	padding: 0;
+	margin-top: var(--pc_layout_nav_width);
+	
+}
+
+.menu_link
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+#bottom_menu_element
+{
+	bottom: 0;
+	position: fixed;
+}
+
+#dropdown_body .menu_element
+{
+	padding-top: var(--dropdown_element_padding);
+	padding-bottom: var(--dropdown_element_padding);
+	font-size: var(--dropdown_font_size);
+}
+
+#dropdown:hover
+{
+	padding-bottom: 0;
+}
+
+#dropdown_body
+{
+	display: none;
+	margin-top: var(--menu_element_padding);
+	padding: 0;
+	background-color: var(--main_element_color);
+}
+
+#dropdown:hover #dropdown_body
+{
+	display: block;
+}
+
+.menu_element:hover, .menu_element.active
+{
+	background-color: var(--theme_color);
+	color: var(--main_element_color);
+}
+
+@keyframes menu_svg_slidein
+{
+	0%
+	{
+		transform: translateX(-100%);
+	}
+	
+	100%
+	{
+		transform: translateX(0);
+	}
+}
+
+#menu_svg
+{
+	width: var(--pc_layout_nav_width);
+	height: var(--pc_layout_nav_width);
+	display: block;
+	position:fixed;
+	animation-name: menu_svg_slidein;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+	transition: transform 2s ease-in-out;
+}
+
+#menu_svg:hover
+{
+	transform: rotate(180deg);
+}
+
+header
+{
+	text-align: center;
+	height: var(--header_height);
+	font-size: var(--header_font_size);
+	line-height: var(--header_height);
+	background-color: var(--main_element_color);
+	box-shadow: var(--shadow);
+	color: var(--navigation_text_color);
+}
+
+main, footer
+{
+	margin-left: var(--pc_layout_nav_width);
+}
+
+footer
+{
+	background-color: var(--main_element_color);
+	text-align: center;
+	box-shadow: var(--shadow);
+}
+
+.general_content_box
+{
+	
+	margin-top: var(--article_margin_top);
+	text-align: center;
+	background-color: var(--main_element_color);
+	padding: var(--article_padding);
+	margin-left: var(--article_side_margin);
+	margin-right: var(--article_side_margin);
+	box-shadow: var(--shadow);
+	height: auto;
+	overflow: hidden;
+}
+
+.general_content_box::first-line
+{
+	font-size: var(--article_title_font_size);
+	color: var(--navigation_text_color);
+}
+
+
+
+@media screen and (max-width: 630px)
+{
+	nav
+	{
+		height: var(--mobile_layout_nav_height);
+		width: 100vw;
+	}
+
+	nav > ol
+	{
+		height: var(--mobile_layout_nav_height);
+		margin: 0;
+		width: 100vw;
+	}
+
+	.menu_element
+	{
+		float: left;
+		padding: 0;
+		margin: 0;
+		display: block;
+		width: 33vw;
+		min-height: var(--mobile_layout_nav_height);
+		line-height: var(--mobile_layout_nav_height);
+		font-size: var(--mobile_menu_element_font_size);
+		min-width: var(--mobile_menu_element_minimum_width);
+	}
+
+
+	#dropdown_body
+	{
+
+		margin:0;
+		height:auto;
+	}
+		
+	#dropdown_body .menu_element
+	{
+		width: 100%;
+		margin: 0;
+		
+	}
+
+	#bottom_menu_element
+	{
+		float: right;
+		bottom: auto;
+		position: static;
+	}
+
+	#menu_svg
+	{
+		display: none;
+	}
+
+	main
+	{
+		margin:0px;
+		margin-top: var(--mobile_layout_nav_height);
+	}
+	
+	header
+	{
+		font-size: var(--mobile_header_font_size);
+		height: var(--mobile_header_height);
+		line-height: var(--mobile_header_height);
+	}
+
+	.general_content_box::first-line
+	{
+		font-size: var(--mobile_article_title_font_size);
+		
+	}
+	
+	footer
+	{
+		margin-left: 0px;
+	}
+}

@@ -1,0 +1,23 @@
+#close
+{
+	position: fixed;
+	right:0;
+	top:0;
+	background-color: white;
+	font-size: 15px;
+	padding: 10px;
+	color: var(--main_element_color);
+	background-color: var(--theme_color);
+	box-shadow: var(--shadow);
+}
+
+#close:hover
+{
+	background-color: var(--main_element_color);
+	color: var(--navigation_text_color);
+}
+
+img
+{
+	width:100%;
+}

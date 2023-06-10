@@ -1,0 +1,134 @@
+
+:root
+{
+	--pc_layout_nav_width: 12vw;
+
+	--header_height: 15vh;
+	--header_font_size: 30px;
+
+	--main_element_color: white;
+	--navigation_text_color: #185B69;
+	--general_text_color: black;
+	--theme_color: #9EC8D1;
+
+	--shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
+
+	--general_font_size: 16px;
+	--navigation_font_size: 16px;
+
+	--menu_element_padding: 17px;
+	
+	--dropdown_element_padding: 9px;
+	--dropdown_font_size: 12px;
+
+	--article_side_margin: 1%;
+	--article_padding: 1%;
+	--article_margin_top: 20px;
+	--article_title_font_size: 25px;
+
+	--paragraph_margin: 40px;
+	
+	--general_link_color: #1E90FF;
+
+	--sub_container_width: 40%;
+
+	--mobile_layout_nav_height: 50px;
+	--mobile_header_height: 10vh;
+	--mobile_menu_element_font_size: 10px;
+	--mobile_menu_element_minimum_width: 70px;
+	--mobile_header_font_size: 15px;
+	--mobile_general_font_size: 12px;
+	--mobile_article_title_font_size: 15px;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: serif;
+}
+
+.sub_container
+{
+	text-align: left;
+	float: left;
+	width: var(--sub_container_width);
+	margin: calc((50% - var(--sub_container_width))/2);
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.sub_container img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	width: 100%;
+}
+
+p
+{
+	margin-bottom: var(--paragraph_margin);
+}
+
+a
+{
+	text-decoration: none;
+	color: var(--general_link_color);
+}
+	
+th
+{
+	font-weight: bold;
+	color: var(--navigation_text_color);
+}
+
+table
+{
+	width:100%;
+}
+
+.fav_button 
+{
+	padding: 10px;
+	text-align: center;
+	background-color: var(--main_element_color);
+	color: var(--navigation_text_color);
+	font-size: var(--navigation_font_size);
+	float: right;
+	overflow: hidden;
+	cursor: pointer;
+	border: 0;
+}
+
+.fav_button:hover, .fav_button.active
+{
+	color: var(--main_element_color);
+	background-color: var(--theme_color);
+}
+
+.line 
+{
+	width: 100%;
+	display: block;
+	float: left;
+}
+
+@media screen and (max-width: 630px)
+{
+
+	.sub_container
+	{
+		width: 100%;
+		margin: 0;
+	}
+
+	
+	body
+	{
+		font-size: var(--mobile_general_font_size);
+	}
+
+}
+

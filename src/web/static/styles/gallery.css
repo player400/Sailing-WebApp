@@ -1,0 +1,17 @@
+.image_miniature
+{
+	text-align: left;
+	float: left;
+	width: var(--sub_container_width)/10;
+	margin: calc((10% - var(--sub_container_width)/10)/2);
+	vertical-align: middle;
+}
+
+.image_miniature img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:20px;
+	width: 100%;
+}
